@@ -22,5 +22,6 @@ mkdir -p $1/.profile.d
 cat <<EOF > $1/.profile.d/000_screen.sh
 #!/usr/bin/env bash
 
-export SCREENDIR=$HOME/.apt/var/run/screen
+mkdir -p \$HOME/.apt/var/run/screen
+export SCREENDIR=\$HOME/.apt/var/run/screen
 EOF
